@@ -1,0 +1,25 @@
+<h1>Cars</h1>
+<a href="/cars/new">New Car</a>
+<br>
+<br>
+<a href="/rents/new">Para rentar un carro</a>
+<table>
+  <thead>
+    <tr>
+      <th>Plate Number</th>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% cars.forEach((car) => { %>
+      <tr>
+        <td><%= car.platenumber %></td>
+        <td><%= car.make %></td>
+        <td><%= car.model %></td>
+        <td><%= car.available %></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>

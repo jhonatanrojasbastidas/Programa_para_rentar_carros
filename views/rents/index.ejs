@@ -1,0 +1,28 @@
+<h1>Rents</h1>
+<a href="/cars">Back to Cars</a>
+<br>
+<a href="/rents/new">New Rent</a>
+<table>
+  <thead>
+    <tr>
+      <th>Rent Number</th>
+      <th>Username</th>
+      <th>Plate Number</th>
+      <th>Rent Date</th>
+      <th>Return Date</th>
+      <th>Returned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% rents.forEach((rent) => { %>
+      <tr>
+        <td><%= rent.rentnumber %></td>
+        <td><%= rent.username %></td>
+        <td><%= rent.platenumber %></td>
+        <td><%= rent.rentdate %></td>
+        <td><%= rent.returndate %></td>
+        <td><%= rent.returned %></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>

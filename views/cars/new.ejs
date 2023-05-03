@@ -1,0 +1,19 @@
+<h1>New Car</h1>
+<% if (typeof error !== 'undefined') { %>
+  <p><%= error %></p>
+<% } %>
+<form method="POST" action="/cars">
+  <div>
+    <label for="platenumber">Plate Number</label>
+    <input type="text" id="platenumber" name="platenumber" required>
+  </div>
+  <div>
+    <label for="make">Brand</label>
+    <input type="text" id="make" name="make" required>
+  </div>
+  <div>
+    <label for="model">Model</label>
+    <input type="text" id="model" name="model" required>
+  </div>
+  <button type="submit">Save</button>
+</form>

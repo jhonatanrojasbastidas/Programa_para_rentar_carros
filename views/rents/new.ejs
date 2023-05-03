@@ -1,0 +1,29 @@
+<h1>New Rent</h1>
+<% if (typeof error !== 'undefined') { %>
+  <p><%= error %></p>
+<% } %>
+
+<form method="POST" action="/rents">
+    <div>
+      <label for="rentnumber">Rent Number</label>
+      <input type="text" id="rentnumber" name="rentnumber" required>
+    </div>
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="platenumber">Plate Number</label>
+      <input type="text" id="platenumber" name="platenumber" required>
+    </div>
+    <div>
+      <label for="rentdate">Rent Date</label>
+      <input type="date" id="rentdate" name="rentdate" required>
+    </div>
+    <div>
+      <label for="returndate">Return Date</label>
+      <input type="date" id="returndate" name="returndate" required>
+    </div>
+    <button type="submit">Save</button>
+  </form>
+  
